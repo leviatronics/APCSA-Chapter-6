@@ -4,13 +4,13 @@
  * and open the template in the editor.
  */
 
-package labs;
+package P63;
 
 /**
  *
  * @author alexb
  * 
- * Big Java P6.2
+ * Big Java P6.3
  */
 public class Projectile {
     private static final double DELTA_T = 0.0001;
