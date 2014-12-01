@@ -9,6 +9,8 @@ package labs;
 /**
  *
  * @author alexb
+ * 
+ * Big Java P6.2
  */
 public class Projectile {
     private static final double DELTA_T = 0.0001;
