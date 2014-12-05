@@ -6,14 +6,11 @@ import java.util.Scanner;
 
 public class FleschIndex {
     public static void main(String[] args) throws FileNotFoundException {
-        String text = readFile("src/fleschindex/document.txt");
-        //System.out.println(Word.numWords(text));
-        //System.out.println(Word.numSyllables(text));
-        //System.out.println(Word.numSentences(text));
+        String text = readFile("src/P69/document.txt");
         
         double index = 206.835
-                - 84.6 * (Word.numSyllables(text) / Word.numWords(text))
-                - 1.015 * (Word.numWords(text) / Word.numSentences(text));
+                - 84.6 * ((double)Word.numSyllables(text) / Word.numWords(text))
+                - 1.015 * ((double)Word.numWords(text) / Word.numSentences(text));
         System.out.println(Math.round(index));
     }
     
